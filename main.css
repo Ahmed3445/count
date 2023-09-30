@@ -1,0 +1,115 @@
+h1 {
+  color: blue;
+  font-family: Arial;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 5px solid black;
+}
+
+h2 {
+  color: green;
+  font-size: 24px;
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline;
+  border: 5px dashed red;
+}
+
+
+/* Select all the buttons */
+button {
+/* Set the font size and padding */
+font-size: 20px;
+padding: 10px;
+}
+
+/* Select the increment buttons by their id attributes */
+#increment-el,
+#increment-5-el,
+#increment-10-el {
+/* Set the background color to green */
+background-color: green;
+/* Set the border color to dark green */
+border-color: darkgreen;
+}
+
+/* Select the save button by its id attribute */
+#save-el {
+/* Set the background color to blue */
+background-color: blue;
+/* Set the border color to dark blue */
+border-color: darkblue;
+}
+
+/* Select all the buttons when they are hovered over */
+button:hover {
+/* Set the cursor to pointer */
+cursor: pointer;
+/* Set the opacity to 0.8 */
+opacity: 0.8;
+}
+
+/* Select all the buttons when they are clicked */
+button:active {
+/* Set the opacity to 0.6 */
+opacity: 0.6;
+}
+
+/* Use a media query to apply different styles for smaller screens */
+@media (max-width: 600px) {
+/* Select the body element */
+body {
+  /* Use flexbox to arrange the elements in a column */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Set some margin and padding */
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Select the h1 element */
+h1 {
+  /* Reduce the font size and margin */
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* Select the h2 element */
+h2 {
+  /* Reduce the font size and margin */
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+ /* Select the div element that contains the buttons */
+ div {
+   /* Use flexbox to arrange the buttons in a row */
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   /* Set some margin and padding */
+   margin-bottom: 10px;
+   padding: 10px;
+
+   /* Add a wrap property to allow the buttons to move to a new line if needed */
+   flex-wrap: wrap;
+
+ }
+
+ /* Select the fieldset element that contains the previous entries element */
+ fieldset {
+   /* Reduce the width and height */
+   width: 80%;
+   height: auto;
+
+   /* Add some overflow property to prevent the text from spilling out of the box */
+   overflow-y: scroll;
+
+ }
+}
+ 
+ 
